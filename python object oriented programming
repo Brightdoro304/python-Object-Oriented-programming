@@ -1,0 +1,56 @@
+#let create a Superhero class with attributes and methods, using a constructor to initialize objects and demonstrate inheritance with polymorphism.
+#Base class: Superhero
+class Superhero:
+def _init_{self,name,power,weakness}
+self.name = name
+self.power = power
+self._weakness = weakness. # Encapsulated as private variable
+def display_hero{self}:
+return 'F'{self.name},has the power of{self.power}
+def reveal_weakness{self}:
+return "F"{self.name}, weakness is{self_weakness}\n
+#Subclass: FlyingHero
+class flyingHero{superhero}:
+def move{self}
+return "F"{self.name} is flying through the sky!
+#Subclass: SpeedsterHero
+clas SpeedsterHero{superhero}:
+def move{self}
+return "f"{self.name} is running at lightning Speed.
+ # Using the classes
+ hero 1 = FlyingHero{"skyHigh";"flight";"storms"}
+ hero 2 = SpeedsterHero["flash";"superspeed";"Time loop"]
+print{hero 1.display_hero} #skyHigh has the power of flight
+print{hero1.move} #skyHigh is flying through the sky.
+print{hero1.reveal_weakness} #skyHigh weakness is storms
+print{hero2.display_hero} #Flash has the power of super Speed
+print{hero2.move} #flash is running at lightning Speed.
+
+#polymorphism challenge
+# Base class: Vehicle
+class Vehicle:
+def move{self}:
+raise NotImplementedError{subclasses must implement this method}
+# Subclass: Car
+class car{vehicle}:
+def move{self}:
+return {driving}
+#Subclass: plane
+class plane{vehicle}:
+def move{self}:
+return{flying}
+#subclass:Boat
+class Boat{vehicle}:
+def move{self}:
+return{sailing}
+#subclass: Bicycle
+class Bicycle{vehicle}:
+def move{self}:
+return{riding}
+#Function to demonstrate polymorphism
+def variable_action{vehicle}:
+print{vehicle.move}
+#Using the classes
+vehicles ={car(),plane(), Boat(), Bicycle()}
+for v in vehicles:
+vehicles_action{v}
